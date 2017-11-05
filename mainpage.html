@@ -1,0 +1,260 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/vendor/foundation.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/fold-post.js"></script>
+        <script src="js/fold-contact.js"></script>
+        <script src="js/fold-video.js"></script>
+        <script src="js/back-to-top.js"></script>
+        <script src="js/jquery.inview.js"></script>
+        <script src="js/animation.js"></script>
+        <script src="js/animation2.js"></script>
+        <script src="js/shake.js"></script>
+        <script src="js/open-photo.js"></script>
+        <script src="js/close-page.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <title>Портфолио Шиляева Дмитрия</title>
+    </head>
+    <body>
+                <div class="navbar">
+                    <ul class="navbar-vars">
+                        <a href="#intro"><li class="navbar-var one" data-title="Главная"></li></a>
+                        <a href="#examples" ><li class="navbar-var two" data-title="Примеры работ"></li></a>
+                        <a href="#information" ><li class="navbar-var three" data-title="Вопросы и ответы"></li></a>
+                    </ul>
+                </div>
+                <div onclick="openContactFunction()" class="floating-button"></div>
+                <div class="small-information-page">
+                    <div onclick="closePageFunction()" class="back">
+
+                    </div>
+                    <div class="small-information">
+                        <a class="examples-s" href="#examples">Примеры работ</a>
+                        <a class="information-s" href="#information">Вопросы и ответы</a>
+                        <div onclick="openContactFunction()" class="contact-s">
+                            <div class="icon-s"></div>
+                            <p class="contact-s-text">
+                                Контакты
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-information-page">
+                    <div class="contact-information">
+                        <div onclick="closeContactFunction()" class="close">
+
+                        </div>
+                        <div class="contact">
+                            <div class="information-intro">
+                                <h2>
+                                    Контакты
+                                </h2>
+                                <h3>
+                                    Свяжитесь со мной по всем интересующим вопросам
+                                </h3>
+                            </div>
+                            <div class="contact-info">
+                                <div class="phone">
+                                    <h4>
+                                        Телефон
+                                    </h4>
+                                    <p>
+                                        8 025 956 24 39
+                                    </p>
+                                </div>
+                                <div class="email">
+                                    <h4>
+                                        Эл. почта
+                                    </h4>
+                                    <a href="mailto:shilo_demon@mail.ru">
+                                        shilo_demon@mail.ru
+                                    </a>
+                                </div>
+                                <div class="address">
+                                    <h4>
+                                        Адрес
+                                    </h4>
+                                    <p>
+                                        г. Минск, ул. Веры Хоружей 30, офис 23 220123
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-page">
+                    <div class="video-frame">
+                        <div onclick="closeVideoFunction()" class="close-video">
+
+                        </div>
+                        <div class="video">
+                            <iframe class="video-player" width="853" height="480" src="" frameborder="0" gesture="media" allowfullscreen></iframe>
+                        </div>
+                        <div class="share-video">
+                            <a class="fb" onclick="Share.facebook('https://youtu.be/lr2T12F9euE','Это стоит увидеть','http://liveam.tv/assets/images/2016/rassmeshi-komika.jpg','Это стоит увидеть')"></a>
+                            <a class="vk"  onclick="Share.vkontakte('https://youtu.be/lr2T12F9euE','Это стоит увидеть','http://liveam.tv/assets/images/2016/rassmeshi-komika.jpg','Это стоит увидеть')"></a>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="topFunction()" class="return">
+                    <div class="icon"></div>
+                </div>
+                <div onclick="closePhotoFunction()" class="photo"></div>
+                <div class="intro">
+                    <a name="intro"></a>
+                    <div class="nav">
+                        <div onclick="openPageFunction()" class="small-button"></div>
+                        <div onclick="openPhotoFunction()"  class="logo-name">
+                            <div class="logo"></div>
+                            <div class="name"><h3>Дмитрий Шиляев</h3></div>
+                        </div>
+                        <a class="examples-a" href="#examples">Примеры работ</a>
+                        <a class="information-a" href="#information">Вопросы и ответы</a>
+                    </div>
+                    <div class="slogan">
+                        <h2 class="slogan1">
+                            Самый
+                        </h2>
+                        <p class="slogan2">
+                            лучший
+                        </p>
+                        <p class="slogan3">
+                            слоган.
+                        </p>
+                    </div>
+                    <div class="video-button-area">
+                        <div onclick="openVideoFunction()" class="video-button"></div>
+                        <div class="video-text">
+                            <p onclick="openVideoFunction()">
+                                Смотреть видео
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="examples">
+                    <a name="examples"></a>
+                    <div class="header-examples">
+                        <h2>
+                            Примеры работ
+                        </h2>
+                        <h3>
+                            Здесь вы можете увидеть примеры моих работ
+                        </h3>
+                    </div>
+                    <div class="examples-list">
+                        <div class="e-list one"><a href="#"></a></div>
+                        <div class="e-list two"><a href="#"></a></div>
+                        <div class="e-list three"><a href="#"></a></div>
+                        <div class="e-list four"><a href="#"></a></div>
+                        <div class="e-list five"><a href="#"></a></div>
+                        <div class="e-list six"><a href="#"></a></div>
+                        <div class="e-list seven"><a href="#"></a></div>
+                        <div class="e-list eight"><a href="#"></a></div>
+                        <div class="e-list nine"><a href="#"></a></div>
+                        <div class="e-list ten"><a href="#"></a></div>
+                    </div>
+                </div>
+                <div class="information">
+                    <a name="information"></a>
+                    <div class="header-information">
+                        <h2>
+                            Вопросы и ответы
+                        </h2>
+                        <h3>
+                            Здесь вы можете узнать ответы на часто задаваемые вопросы
+                        </h3>
+                    </div>
+                    <div class="information-list">
+                        <div class="i-list-folded">
+                            <input onclick="foldPost (event)" class="fold-button folded" type="submit" value="+" >
+                            <div onclick="foldPostTitle (event)" class="il-list-title">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                            <div class="i-list-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, possimus!
+                            </div>
+                        </div>
+                        <div class="i-list-folded">
+                            <input onclick="foldPost (event)" class="fold-button folded" type="submit" value="+">
+                            <div onclick="foldPostTitle (event)" class="il-list-title">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                            <div class="i-list-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, possimus!
+                            </div>
+                        </div>
+                        <div class="i-list-folded">
+                            <input onclick="foldPost (event)" class="fold-button folded" type="submit" value="+">
+                            <div onclick="foldPostTitle (event)" class="il-list-title">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                            <div class="i-list-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, possimus!
+                            </div>
+                        </div>
+                        <div class="i-list-folded">
+                            <input onclick="foldPost (event)" class="fold-button folded" type="submit" value="+">
+                            <div onclick="foldPostTitle (event)" class="il-list-title">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                            <div class="i-list-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, possimus!
+                            </div>
+                        </div>
+                        <div class="i-list-folded">
+                            <input onclick="foldPost (event)" class="fold-button folded" type="submit" value="+">
+                            <div onclick="foldPostTitle (event)" class="il-list-title">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                            <div class="i-list-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, possimus!
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="footer">
+                        <div class="footer-nav">
+                            <a href="#information">
+                                Вопросы и ответы
+                            </a>
+                            <a href="#examples">
+                                Примеры работ
+                            </a>
+                            <a href="#intro">
+                                Главная страница
+                            </a>
+                        </div>
+                        <div class="footer-info">
+                            <div class="first">
+                                <p>
+                                    &#169;2017, Шиляев Дмитрий
+                                </p>
+                                <p>
+                                    shilo_demon@mail.ru
+                                </p>
+                            </div>
+                            <div class="second">
+                                <p>
+                                    Телефон для связи
+                                </p>
+                                <p>
+                                    8-025-956-24-39
+                                </p>
+                            </div>
+                        </div>
+                        <div class="share">
+                            <a class="fb" onclick="Share.facebook('http://bagiraclub.ru/images/bagiraclub/2017/02/67.jpg','Узнайте вашу внутреннюю сущность','http://tunnel.ru/media/images/2016-10/post_comment/797863/at944653370.jpg','Узнайте вашу внутреннюю сущность')"></a>
+                            <a class="vk"  onclick="Share.vkontakte('http://bagiraclub.ru/images/bagiraclub/2017/02/67.jpg','Узнайте вашу внутреннюю сущность','http://tunnel.ru/media/images/2016-10/post_comment/797863/at944653370.jpg','Узнайте вашу внутреннюю сущность')"></a>
+                        </div>
+                    </footer>
+                </div>
+    </body>
+</html>
