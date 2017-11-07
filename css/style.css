@@ -22,6 +22,11 @@
     animation-name: shake;
 }
 
+@font-face{
+    font-family: Tangak;
+    src: url("../fonts/Tangak.otf");
+}
+
 @keyframes spinner {
     100% {
         transform: rotate(1800deg);
@@ -49,6 +54,7 @@ body{
     min-height: 300vh;
     width: 100%;
     flex: auto;
+    font-family: "Kozuka Gothic Pro B", Arial sans-serif;
 }
 .small-information-page{
     display: none;
@@ -436,19 +442,31 @@ body{
     padding-left:10%;
 }
 .slogan1{
+    font-family: Tangak;
     position: relative;
-    font-size: 8vh;
-    color: paleturquoise;
+    font-size: 10vh;
+    color: #fff3d9;
+    text-shadow: -3px 2px 0 white,-1px 0 0 white,
+-5px 4px 3px grey,-6px 5px 4px darkslategray,-10px 8px 6px black;
+    -webkit-text-stroke: 1px orange;
 }
 .slogan2{
+    font-family: Tangak;
     position: relative;
-    font-size: 8vh;
-    color: orange;
+    font-size: 10vh;
+    color: #fff3d9;
+    text-shadow: -3px 2px 0 white,-2px 1px 0 white,-1px 0 0 white,
+    -5px 4px 3px grey,-6px 5px 4px darkslategray,-10px 8px 6px black;
+    -webkit-text-stroke: 1px orange;
 }
 .slogan3{
+    font-family: Tangak;
     position: relative;
-    font-size: 8vh;
-    color: white;
+    font-size: 10vh;
+    color: #fff3d9;
+    text-shadow: -3px 2px 0 white,-2px 1px 0 white,-1px 0 0 white,
+    -5px 4px 3px grey,-6px 5px 4px darkslategray,-10px 8px 6px black;
+    -webkit-text-stroke: 1px orange;
 }
 .video-button-area{
     height: 20%;
