@@ -54,7 +54,6 @@ body{
     min-height: 300vh;
     width: 100%;
     flex: auto;
-    font-family: "Kozuka Gothic Pro B", Arial sans-serif;
 }
 .small-information-page{
     display: none;
@@ -557,6 +556,11 @@ body{
 }
 .e-list.two a{
     background: url("../img/test1.png") top left no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.e-list.three a{
+    background: url("../img/story.png") top left no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
