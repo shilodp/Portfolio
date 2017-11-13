@@ -564,6 +564,11 @@ body{
     -webkit-background-size: cover;
     background-size: cover;
 }
+.e-list.four a{
+    background: url("../img/flip.png") top left no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
 .e-list a{
     display: block;
     width: 100%;
