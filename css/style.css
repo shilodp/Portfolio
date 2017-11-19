@@ -569,6 +569,11 @@ body{
     -webkit-background-size: cover;
     background-size: cover;
 }
+.e-list.five a{
+    background: url("../img/sort.png") top left no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
 .e-list a{
     display: block;
     width: 100%;
