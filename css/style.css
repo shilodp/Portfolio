@@ -69,6 +69,56 @@ body{
     top: 5vh;
     z-index: 1;
 }
+.currency-information-page{
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    display: none;
+    justify-content: center;
+}
+.currency-information{
+    display: flex;
+    position: absolute;
+    left: 3%;
+    align-self: center;
+    width: 94%;
+    height: 95vh;
+    background: #fff3d9;
+    z-index: 2;
+    border-radius:10px;
+    top: 0;
+    flex-direction: column;
+    align-items: center;	
+}
+.currency{
+	width: 50%;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	height: 80%;
+}
+#informers{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+#nbrb {
+	border:solid 1px black;
+}
+#calc{
+	display:flex;
+	flex-direction:column;
+}
+#selects{
+	display:flex;
+	flex-direction:row;
+}
+#inputs{
+	display:flex;
+	flex-direction:row;	
+}
 .contact-information-page{
     background: rgba(0,0,0,0.7);
     position: fixed;

@@ -21,8 +21,9 @@
         <script src="js/shake.js"></script>
         <script src="js/open-photo.js"></script>
         <script src="js/close-page.js"></script>
+        <script src="js/currency.js"></script>
         <script src="https://www.youtube.com/iframe_api"></script>
-        <title>Портфолио Шиляева Дмитрия</title>
+		<title>Портфолио Шиляева Дмитрия</title>
     </head>
     <body>
                 <div class="navbar">
@@ -33,6 +34,40 @@
                     </ul>
                 </div>
                 <div onclick="openContactFunction()" class="floating-button"></div>
+                <div class="currency-information-page">
+                     <div class="currency-information">
+                        <div onclick="closeCurrency()" class="close"></div>
+                        <div class="currency">
+                            <div id="informers" style="display:flex">
+								<div class="nbrb">
+									<h5>Курсы валют НБ РБ</h5>
+									<iframe id="nbrb" src="https://www.nbrb.by/publications/wmastersd.asp?
+										lan=ru&datatype=0&fnt=Times&fntsize=13&fntcolor=005c7b
+										&lnkcolor=fc7f7f&bgcolor=fdf2e0&brdcolor=fdf2e0"
+										width=200 height=95 frameborder=0 scrolling=no>
+									</iframe>
+								</div>
+								<h5>Курсы покупки/продажи наличных иностранных валют</h5>
+								<div id="informerBelarusbank"></div>
+							</div>
+                            <div id="calc">
+								<h5 id="calcHead">Конвертер валют НБРБ на </h5>
+								<div id="selects">
+									<select id="firstСurrencySelect" onchange="calcCurrency('first', 'second')">
+										<option value="1"> BYN </option>										
+									</select>
+									<select id="secondСurrencySelect" onchange="calcCurrency('first', 'second')">
+										<option value="1"> BYN </option>										
+									</select>
+								</div>
+								<div id="inputs">
+									<input type="number" step="any" id="firstСurrencyInput" value="0">
+									<input type="number" step="any" id="secondСurrencyInput" value="0">
+								</div>
+							</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="small-information-page">
                     <div onclick="closePageFunction()" class="back">
 
@@ -222,6 +257,9 @@
                     </div>
                     <footer class="footer">
                         <div class="footer-nav">
+                            <a onclick="openCurrency()">
+                                Обмен валюты
+                            </a>
                             <a href="#information">
                                 Вопросы и ответы
                             </a>
@@ -257,4 +295,6 @@
                     </footer>
                 </div>
     </body>
+	<script type="text/javascript" src="https://belarusbank.by/informer?logotyp=2&ColorTextTitle=000000&ColorTextInformer=969696&ColorBackGround=ffffff&ColorTitleBackGround=ffffff&ColorBorder=006030"></script>
+        
 </html>
